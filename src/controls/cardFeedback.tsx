@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaStar, FaStarHalf } from "react-icons/fa";
+import { FaStar} from "react-icons/fa";
 
 function cardFeedback({childern, profile,name,feedback,...props}:any) {
   return (
