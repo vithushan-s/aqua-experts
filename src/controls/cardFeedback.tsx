@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { FaStar} from "react-icons/fa";
 
 function cardFeedback({childern, profile,name,feedback,...props}:any) {
