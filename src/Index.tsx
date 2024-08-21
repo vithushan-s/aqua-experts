@@ -19,11 +19,19 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Index() {
   const [IsOpen, setIsOpen] = useState(false);
   console.log(IsOpen)
+
+  const navigate = useNavigate();
+  const handleCustomer = () => {
+      navigate('/register')
+  }
+
+
   return (
 
     
@@ -83,7 +91,7 @@ function Index() {
 
                   <div className="flex flex-col md:flex-row gap-2 w-full p-3 md:w-full justify-center">
                     <input type="text" placeholder="enter your email" className="p-3 rounded-full md:w-1/2"/>
-                    <button className="bg-yellow-400 p-3 rounded-full font-semibold text-xs hover:bg-yellow-500">Customer Inquiry</button>
+                    <button onClick={handleCustomer} className="bg-yellow-400 p-3 rounded-full font-semibold text-xs hover:bg-yellow-500">Customer Inquiry</button>
                   </div>
                 </div>
               </div>
