@@ -19,12 +19,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-
-import About from './pages/About';
-import Contact from './pages/Contact';
-// import Contact from './pages/Contact';
-
+import { Link } from 'react-router-dom';
 
 function Index() {
   const [IsOpen, setIsOpen] = useState(false);

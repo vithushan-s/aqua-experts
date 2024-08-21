@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Footer from '../controls/Footer'
 import Navbar from '../controls/Navbar'
 import { MdEmail } from "react-icons/md";
