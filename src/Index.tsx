@@ -19,15 +19,22 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+
+import About from './pages/About';
+import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 
 
 function Index() {
   const [IsOpen, setIsOpen] = useState(false);
   console.log(IsOpen)
   return (
+
+    
     <>
         <main className="flex md:min-h-screen flex-col">
-          <div className='bg-zinc-800 w-full h-8 text-white flex justify-between items-center'>
+          <div className='bg-blue-950 w-full h-8 text-white flex justify-between items-center'>
             <div className='container mx-auto flex '>
               <div className='flex justify-center items-center md:justify-start gap-2 w-full'>
                 <BiSolidOffer/>
@@ -62,14 +69,13 @@ function Index() {
                       </div>
                   </div>
 
-                  
                   <div className={`md:flex md:gap-3 ${!IsOpen ? "hidden":"absolute top-16 bg-white  w-full flex flex-col gap-5 text-center p-3"} px-3`}>
                       <ul className='flex flex-col md:flex-row gap-5 font-semibold mt-4 md:gap-5'>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                       </ul>
-                      <a href="#" className='bg-red-500 rounded-md md:rounded-full py-1 md:px-5 md:py-3'>Login</a>
+                      <Link to="/login" className='bg-red-500 rounded-md md:rounded-full py-1 md:px-5 md:py-3'>Login</Link>
                   </div>
               </nav>
 
@@ -357,8 +363,8 @@ function Index() {
       
             {/* column3 */}
             <div className='flex flex-col gap-5 mt-5 md:mt-0'>
-                <div className='flex flex-col items-center md:items-start'>
-                    <h1 className='text-lg font-bold text-white'>Contact Information</h1>
+                <div className='bg-blue-950 p-3 rounded-lg shadow-lg flex flex-col items-center md:items-start'>
+                    <h1 className='text-lg font-bold text-white '>Contact Information</h1>
                     <div className='flex flex-col items-center md:items-start'>
                       <div className='flex md:items-center gap-2'>
                         <FaWhatsapp className='hidden md:block w-10 h-10 text-green-400'/>
