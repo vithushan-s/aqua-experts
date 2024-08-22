@@ -6,9 +6,9 @@ type Props = {}
 
 function Category2({}: Props) {
   return (
-    <section className="bg-blue-950 bg-[url('section.png')] bg-cover md:w-full py-5 md:h-screen flex justify-center items-center md:p-5">
-      <div className="flex flex-col gap-3 pt-5 items-center w-full">
-          <h1 className="text-xl md:text-2xl font-semibold text-blue-950">Category</h1>
+    <section className="bg-blue-950 bg-[url('https://climatesociety.climate.columbia.edu/sites/default/files/styles/cu_crop/public/content/News%20Images/Under%20the%20water.jpg?itok=qc-xsrGK')] bg-cover md:w-full py-5 md:h-screen flex justify-center items-center md:p-5">
+      <div className="flex flex-col gap-5 pt-5 items-center w-full">
+          <h1 className="text-xl md:text-2xl font-semibold text-white">Categories</h1>
           <div className="grid grid-row-5 grid-cols-2 gap-y-6 gap-x-6 md:grid-rows-2 md:grid-cols-5 md:gap-y-6 md:gap-x-6">
                   <Favorite image="1.png">
                     <h1 className='text-lg font-semibold'>Arowana</h1>
