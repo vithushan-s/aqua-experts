@@ -1,27 +1,27 @@
-import { MdEmail } from "react-icons/md";
+// import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 type Props = {}
 
 function Footer({}: Props) {
   return (
-    <div>
-         <section className='flex flex-col w-full bg-blue-900 md:h-96 p-10 md:flex-row md:justify-between'>
-            {/* column1 */}
-            <div className='flex flex-col justify-center items-center md:items-start'>
+    <footer className="w-full h-full flex flex-col bg-blue-950 md:flex-row md:justify-between md:px-10 py-5">
+        {/* column1 */}
+            <div className='flex flex-col justify-center items-center md:items-start md:w-1/3'>
               <img src="logo.png"  className='w-24 h-24'/>
               <h1 className='text-md md:text-xl font-semibold text-white border-b border-gray-500'>Norway Aqua Expert</h1> 
-              <p className='text-sm text-white mt-5 text-center md:text-left'>It is a long established fact that a reader <br /> 
-              will be distracted by the readable content <br /> of 
-              page when looking at its layout. The point of <br /> 
+              <p className='text-sm text-white w-3/4 text-wrap md:text-justify mt-5 text-center'>It is a long established fact that a reader
+              will be distracted by the readable content  of 
+              page when looking at its layout. The point of  
               Lorem Ipsum is that it has a more-or-less 
-              distribution <br /> of letters, as opposed to using '
+              distribution of letters, as opposed to using '
               Content here.
               </p>
             </div>
       
             {/* column2 */}
-            <div className='flex flex-col md:flex-row gap-12 mt-10 md:mt-0 text-white'>
+            <div className='flex flex-col md:flex-row gap-12 mt-10 md:mt-0 text-white md:w-1/3'>
                 <div className='flex flex-col items-center md:items-start'>
                     <h1 className='text-lg font-bold'>Quick Links</h1>
                     <div className='flex flex-col justify-center md:justify-start items-center md:items-start gap-2 text-sm'>
@@ -55,7 +55,7 @@ function Footer({}: Props) {
             </div>
       
             {/* column3 */}
-            <div className='flex flex-col gap-5 mt-5 md:mt-0'>
+            <div className='flex flex-col gap-5 mt-5 md:mt-0 md:w-1/3'>
                 <div className='bg-blue-950 p-3 rounded-lg shadow-lg flex flex-col items-center md:items-start'>
                     <h1 className='text-lg font-bold text-white '>Contact Information</h1>
                     <div className='flex flex-col items-center md:items-start'>
@@ -65,7 +65,7 @@ function Footer({}: Props) {
                       </div>
                       <div className='flex md:items-center gap-2'>
                         <MdEmail className='hidden md:block w-10 h-10 text-red-400'/>
-                        <span className='text-2xl font-bold md:text-xl text-white'>norwayaquaexperts@gmail.com</span>
+                        <span className='text-xl font-bold md:text-xl text-white'>norwayaquaexperts@gmail.com</span>
                       </div>
                     </div>
                 </div>
@@ -84,13 +84,7 @@ function Footer({}: Props) {
                     </div>
                 </div>
             </div>
-          </section>
-      
-          {/* Footer End */}
-          <section className='h-14 bg-blue-950 flex justify-center items-center text-white'>
-            <p>@2024 All right reserved aqua-experts.com</p>
-          </section>
-    </div>
+    </footer>
   )
 }
 

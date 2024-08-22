@@ -7,7 +7,7 @@ export default function Register({}: Props) {
   return (
     <section className="bg-blue-950 w-full h-screen flex justify-center items-center">
     <div className="bg-blue-900 w-1/2 h-2/3 rounded-2xl shadow-lg flex justify-around">
-        <div className="w-1/2 h-full bg-[url('login-cover.jpeg')] bg-cover flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
+        <div className="w-1/2 h-full bg-[url('section.png')] bg-cover flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
             <div className='flex items-center drop-shadow-lg'>
                 <img src="logo.png" className='h-14 w-14' alt="logo for aqua experts" />
                 <div className="flex flex-col">
