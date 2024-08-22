@@ -5,8 +5,8 @@ type Props = {}
 
 export default function Register({}: Props) {
   return (
-    <section className="bg-blue-950 w-full h-screen flex justify-center items-center">
-    <div className="bg-blue-900 w-1/2 h-2/3 rounded-2xl shadow-lg flex justify-around">
+    <section className="bg-[url('https://img.freepik.com/free-photo/underwater-landscape_23-2150440386.jpg?t=st=1724264729~exp=1724268329~hmac=649d32e86cbf08fc78ed70cde9420c2ca27ce95122877db5b3344ce39cf05122&w=826')] bg-cover w-full h-screen flex justify-center items-center">
+    <div className="bg-blue-900 w-1/2 h-2/3 rounded-2xl drop-shadow-2xl flex justify-around">
         <div className="w-1/2 h-full bg-[url('section.png')] bg-cover flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
             <div className='flex items-center drop-shadow-lg'>
                 <img src="logo.png" className='h-14 w-14' alt="logo for aqua experts" />
